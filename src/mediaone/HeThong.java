@@ -48,34 +48,28 @@ public class HeThong {
 							int luaChonKhachHang = sc.nextInt();
 							switch (luaChonKhachHang) {
 							case 1:
-								try {
-									boolean b = true;
-									while (b) {
-										khachHangView.menuXemToanBoSanPhamChoKhachHang();
-										System.out.print("Nhap lua chon: ");
-										int luaChonHienThiChoKhachHang = sc.nextInt();
-										switch (luaChonHienThiChoKhachHang) {
-										case 1:
-											quanLySanPham.xemToanBoSachChoKhachHang();
-											break;
-										case 2:
-											quanLySanPham.xemToanBoDiaPhimChoKhachHang();
-											break;
-										case 3:
-											quanLySanPham.xemToanBoDiaNhacChoKhachHang();
-											break;
-										case 4:
-											b = false;
-											break;
-										default:
-											System.out.println("Ban da nhap sai xin vui long nhap lai: ");
-											break;
-										}
+								boolean b = true;
+								while (b) {
+									khachHangView.menuXemToanBoSanPhamChoKhachHang();
+									System.out.print("Nhap lua chon: ");
+									int luaChonHienThiChoKhachHang = sc.nextInt();
+									switch (luaChonHienThiChoKhachHang) {
+									case 1:
+										quanLySanPham.xemToanBoSachChoKhachHang();
+										break;
+									case 2:
+										quanLySanPham.xemToanBoDiaPhimChoKhachHang();
+										break;
+									case 3:
+										quanLySanPham.xemToanBoDiaNhacChoKhachHang();
+										break;
+									case 4:
+										b = false;
+										break;
+									default:
+										System.out.println("Ban da nhap sai xin vui long nhap lai: ");
+										break;
 									}
-								} catch (InputMismatchException e) {
-									System.out.println("Ban da nhap sai xin vui long nhap lai: ");
-								} catch (Exception e) {
-									e.printStackTrace();
 								}
 								break;
 							case 2:
@@ -111,34 +105,28 @@ public class HeThong {
 							int luaChonQuanLy = sc.nextInt();
 							switch (luaChonQuanLy) {
 							case 1:
-								try {
-									boolean j = true;
-									while (j) {
-										quanLyView.menuXemToanBoSanPham();
-										System.out.print("Nhap lua chon: ");
-										int luaChonHienThi = sc.nextInt();
-										switch (luaChonHienThi) {
-										case 1:
-											quanLySanPham.xemToanBoSach();
-											break;
-										case 2:
-											quanLySanPham.xemToanBoDiaPhim();
-											break;
-										case 3:
-											quanLySanPham.xemToanBoDiaNhac();
-											break;
-										case 4:
-											j = false;
-											break;
-										default:
-											System.out.println("Ban da nhap sai xin vui long nhap lai: ");
-											break;
-										}
+								boolean j = true;
+								while (j) {
+									quanLyView.menuXemToanBoSanPham();
+									System.out.print("Nhap lua chon: ");
+									int luaChonHienThi = sc.nextInt();
+									switch (luaChonHienThi) {
+									case 1:
+										quanLySanPham.xemToanBoSach();
+										break;
+									case 2:
+										quanLySanPham.xemToanBoDiaPhim();
+										break;
+									case 3:
+										quanLySanPham.xemToanBoDiaNhac();
+										break;
+									case 4:
+										j = false;
+										break;
+									default:
+										System.out.println("Ban da nhap sai xin vui long nhap lai: ");
+										break;
 									}
-								} catch (InputMismatchException e) {
-									System.out.println("Ban da nhap sai xin vui long nhap lai: ");
-								} catch (Exception e) {
-									e.printStackTrace();
 								}
 								break;
 							case 2:
@@ -148,34 +136,28 @@ public class HeThong {
 								quanLySanPham.capNhatThongTinSanPham();
 								break;
 							case 4:
-								try {
-									boolean k = true;
-									while (k) {
-										quanLyView.menuThemSanPham();
-										System.out.print("Nhap lua chon: ");
-										int luaChonThem = sc.nextInt();
-										switch (luaChonThem) {
-										case 1:
-											quanLySanPham.themSach();
-											break;
-										case 2:
-											quanLySanPham.themDiaPhim();
-											break;
-										case 3:
-											quanLySanPham.themDiaNhac();
-											break;
-										case 4:
-											k = false;
-											break;
-										default:
-											System.out.println("Ban da nhap sai xin vui long nhap lai: ");
-											break;
-										}
+								boolean k = true;
+								while (k) {
+									quanLyView.menuThemSanPham();
+									System.out.print("Nhap lua chon: ");
+									int luaChonThem = sc.nextInt();
+									switch (luaChonThem) {
+									case 1:
+										quanLySanPham.themSach();
+										break;
+									case 2:
+										quanLySanPham.themDiaPhim();
+										break;
+									case 3:
+										quanLySanPham.themDiaNhac();
+										break;
+									case 4:
+										k = false;
+										break;
+									default:
+										System.out.println("Ban da nhap sai xin vui long nhap lai: ");
+										break;
 									}
-								} catch (InputMismatchException e) {
-									System.out.println("Ban da nhap sai xin vui long nhap lai: ");
-								} catch (Exception e) {
-									e.printStackTrace();
 								}
 								break;
 							case 5:
